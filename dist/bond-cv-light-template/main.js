@@ -163,7 +163,7 @@ class AppComponent {
         this.userCv = new UserCv();
     }
     ngOnInit() {
-        this.httpClient.get("https://common-rest-api-dot-bond-app-202002.appspot.com/users?id=1").subscribe((data) => { this.userCv = data; });
+        this.httpClient.get("https://bond-common-rest-api.herokuapp.com/users?id=1").subscribe((data) => { this.userCv = data; });
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
