@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
     constructor(private httpClient: HttpClient) { }
 
     ngOnInit() {
-      this.httpClient.get<UserCv>("http://localhost:8080/users?id=1").subscribe((data: UserCv)=>{ this.userCv = data });
+      this.httpClient.get<UserCv>("https://common-rest-api-dot-bond-app-202002.appspot.com/users?id=1").subscribe((data: UserCv)=>{ this.userCv = data });
     }
 
 }
