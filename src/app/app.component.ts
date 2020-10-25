@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
     constructor(private httpClient: HttpClient) { }
 
     ngOnInit() {
-      this.httpClient.get<UserCv>("https://bond-common-rest-api.herokuapp.com/users?id=1").subscribe((data: UserCv)=>{ this.userCv = data });
+      this.httpClient.get<UserCv>("https://bond-common-rest-api.herokuapp.com/api/query?type=users&id=1").subscribe((data: UserCv)=>{ this.userCv = data });
     }
 
 }
